@@ -21,12 +21,21 @@ Current methods:
 - `model_info(provider=None)` returns a small status dictionary
 - `compress_conversation()` returns the stored conversation as joined text
 
+## `LLMBridgeFactory`
+
+The `LLMBridgeFactory` in `providers.py` is the new primary interface for diverse provider integrations.
+
+Current responsibilities:
+- `get_google_client()`: Returns an official Google GenAI client.
+- `get_anthropic_client()`: Returns an official Anthropic client.
+- `get_groq_client()`: Returns an official Groq client.
+- `call_http_provider()`: A helper method that bridges to the legacy `APIKeyManager` for standard HTTP-based provider calls.
+
 ## `APIKeyManager`
 
-`APIKeyManager` currently handles:
-- provider registration
-- API key storage
-- environment-variable loading
-- auth header generation
-- provider request payload building
-- provider response parsing
+`APIKeyManager` (in `API_manager.py`) remains the engine for HTTP-based provider interactions.
+
+Current responsibilities:
+- Manage API keys and provider metadata.
+- Build standard OpenAI-compatible request payloads and headers.
+- Handle responses for legacy HTTP-based providers like OpenAI and OpenRouter.
