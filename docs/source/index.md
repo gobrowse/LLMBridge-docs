@@ -14,6 +14,5 @@ current-repos
 api-overview
 providers
 limitations
-readthedocs-access
 roadmap
 ```
