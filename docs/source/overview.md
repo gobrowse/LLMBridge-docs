@@ -1,8 +1,8 @@
 # Overview
 
-## What AImgmt is right now
+## What LLMBridge is right now
 
-AImgmt currently exists in three parts:
+LLMBridge currently exists in three parts:
 
 - an active prototype repository with source files under `src/`
 - a separate pip-oriented packaging repository

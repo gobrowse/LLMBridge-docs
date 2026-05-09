@@ -1,6 +1,6 @@
-# AImgmt Documentation
+# LLMBridge Documentation
 
-AImgmt is currently a prototype for managing AI provider API keys and sending simple chat-style requests through a small Python interface.
+LLMBridge is currently a prototype for managing AI provider API keys and sending simple chat-style requests through a small Python interface.
 
 The documentation here is intentionally accurate to the current state of the project.
 

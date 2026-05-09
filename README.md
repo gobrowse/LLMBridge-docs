@@ -1,6 +1,6 @@
-# AImgmt Documentation
+# LLMBridge Documentation
 
-This repository contains the standalone documentation site for AImgmt.
+This repository contains the standalone documentation site for LLMBridge.
 
 ## Purpose
 

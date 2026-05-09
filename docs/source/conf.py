@@ -1,4 +1,4 @@
-project = "AImgmt"
+project = "LLMBridge"
 author = "gobrowse"
 release = "0.1.0"
 
@@ -10,4 +10,4 @@ templates_path = ["_templates"]
 exclude_patterns = []
 
 html_theme = "furo"
-html_title = "AImgmt Documentation"
+html_title = "LLMBridge Documentation"
