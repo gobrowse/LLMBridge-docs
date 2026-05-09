@@ -1,8 +1,8 @@
 # Getting Started
 
-AImgmt is currently in a prototype stage. The active working repository uses source files directly from `src/`.
+## Current prototype usage
 
-## Current usage pattern
+The active prototype repo is still used directly from `src/`.
 
 ```python
 import sys
@@ -21,8 +21,14 @@ print(reply)
 print(model.model_info())
 ```
 
+## Requirements
+
+- a valid provider API key
+- network access for real provider requests
+- `requests` installed in the Python environment
+
 ## Notes
 
-- A valid provider API key is required.
-- Network access is required for real provider calls.
-- The main development repo and the pip-oriented repo are currently separate.
+- imports are still source-file based in the prototype repo
+- provider/network failures currently surface as runtime exceptions
+- conversation history is stored in memory on the model instance

@@ -2,12 +2,31 @@
 
 ## `Model_Init`
 
-`Model_Init` is responsible for registering provider API keys.
+`Model_Init` is a minimal setup helper.
+
+Current responsibility:
+- add provider API keys through `add_api_key(provider, key)`
 
 ## `Model`
 
-`Model` stores provider and model selection, tracks conversation history in memory, and sends chat-style requests through the API manager.
+`Model` stores:
+- selected model name
+- selected provider name
+- optional tool flags
+- system prompt text
+- in-memory conversation state
+
+Current methods:
+- `message(message)` sends a provider request and stores the reply in local conversation state
+- `model_info(provider=None)` returns a small status dictionary
+- `compress_conversation()` returns the stored conversation as joined text
 
 ## `APIKeyManager`
 
-`APIKeyManager` stores provider metadata, loads keys from environment variables, builds headers, and sends provider requests.
+`APIKeyManager` currently handles:
+- provider registration
+- API key storage
+- environment-variable loading
+- auth header generation
+- provider request payload building
+- provider response parsing
