@@ -13,6 +13,7 @@ getting-started
 current-repos
 api-overview
 providers
+security
 limitations
 roadmap
 ```

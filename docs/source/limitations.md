@@ -16,6 +16,10 @@ Class names and method shapes are still simple and may change as the package des
 
 Provider and network failures are surfaced, but the exception model is still lightweight.
 
-## Tooling
+## Security
 
-`tools.py` is currently a placeholder.
+The security module is comprehensive but exception messages could be more user-friendly.
+
+## Threading
+
+Thread-local storage prevents multi-threaded conversation sharing, which means conversations cannot be shared across threads.
